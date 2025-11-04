@@ -76,7 +76,6 @@ const MainHeader = () => {
 	<p style={{color:"#999999", fontSize: "1.25rem", width:"80%"}}>Transforma tu manera de aprender con una consultoria personalizada que te ayudara a encontrar con el metodo de estudio que mejor se adapte a ti</p>
 	<div>
           <button style={{backgroundColor: "#f0754c", border: "solid 1px transparent", padding: "20px 40px", borderRadius: "10px", margin: "10px", color: "#ffffff"}} onClick={() => navigate("/page")}>Haz el test ahora</button>
-          <button style={{backgroundColor: "#ffffff", border: "2px solid #4742d7", padding: "20px 40px", borderRadius:"10px", color: "#4742d7"}}>Agendar sesion</button>
 	</div>
       </div>
       <div style={{flex: "1"}}>
@@ -90,7 +89,7 @@ const MainContent = () => {
   return (
    <main style={mainStyle}>
      <h2 style={{fontSize: "3rem"}}>Aprender nunca habia sido tan <span style={{color: "#f0754c"}}>tuyo</span> </h2>
-     <p style={{color: "#71717a", fontSize: "1.125rem"}}>Cada estudiante tiene una forma unica de comprender, retener y aplicar el conocimiento. Mi servicio de consultoria academica personalizada esta disenado para ayudarte a identificar tu estilo de aprendizaje, optimizar tus habitos de estudio y mejorar tu rendimiento academico.�</p>
+     <p style={{color: "#71717a", fontSize: "1.125rem"}}>Cada estudiante tiene una forma unica de comprender, retener y aplicar el conocimiento. Mi servicio de consultoria academica personalizada esta disenado para ayudarte a identificar tu estilo de aprendizaje, optimizar tus habitos de estudio y mejorar tu rendimiento academico.��</p>
 
      <p style={{fontSize: "1.125rem"}}>Ya seas estudiante de secundaria, preparatoria o universidad, te acompano paso a paso para que estudiar deje de ser una carga y se convierta en un experencia efectiva, clara y motivadora.</p>
      <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between", width: "100%"}}>
@@ -127,15 +126,15 @@ const AsideContent = () => {
   return (
     <aside style={asideStyle}>
       <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
-      <h3 style={{fontSize:"3rem",}}>Hola, soy <span style={{color: "#f0754c"}}>tu nombre</span> </h3>
+      <h3 style={{fontSize:"3rem",}}>Encuentra tu tecnica de  <span style={{color: "#f0754c"}}>estudio</span> </h3>
       <div style={afterStyle}></div>
       </div>
       <div style={{maxWidth: "768px", border: "solid 2px #e4e4e7", borderRadius: "10px", padding: "3rem", margin: "5%"}}>
-        <p style={{fontSize: "1.125rem"}}>Soy consultoria en orientacion academica y apasionada por ayudar a los estudiantes a descubrir su maximo potencial. Durante mi trayectoria he acompanado jovenes en el desarrollo de tecnicas personalizadas de estudio, impulsando su confianza, organizacion
+        <p style={{fontSize: "1.125rem"}}>Nuestro proyecto busca ayudar a los estudiantes a descubrir su maximo potencial. Queremeos acompanar a jovenes en el desarrollo de tecnicas personalizadas de estudio, impulsando su confianza, organizacion
 	y resultados escolares</p>
-        <p style={{fontSize: "1.125rem"}}>Mi enfoque combina autoconocimiento estrategias pedagogicas y herramientas praticas todo adaptado a tus metas y ritmo de aprendizaje</p>
+        <p style={{fontSize: "1.125rem"}}>Nuestro enfoque enfoque combina autoconocimiento estrategias pedagogicas y herramientas praticas todo adaptado a tus metas y ritmo de aprendizaje</p>
 
-	<p style={asideParagraph}>Mi mision es sencilla: que encuentres tu propio metodo para aprender mejor y sentirte seguro con tus capacidades.</p>
+	<p style={asideParagraph}>Nuestra mision es sencilla: que encuentres tu propio metodo para aprender mejor y sentirte seguro con tus capacidades.</p>
       </div>
     </aside>
   );
@@ -165,7 +164,9 @@ const ListSection = () => {
             <h4 style={{fontSize: "1.25rem"}}>Diagnostico inicial</h4>
 	    <p style={{color: "#71717a"}}>Mediante una breve evaluacion conoceremos tu forma natural de asimiliar la informacion</p>
 	  </div>
-	  <span style={{border: "2px solid #000000", borderRadius: "48%", padding: "2%"}}>L</span>
+	  <span className="material-symbols-outlined">
+	  check
+	  </span>
 	</div>
 
         <div style={{display: "flex", flexDirection: "row", alignItems: "center", padding: "2%", border: "2px solid #dcdbeb", borderRadius: "10px", margin: "3%"}}>
@@ -174,7 +175,9 @@ const ListSection = () => {
             <h4 style={{fontSize: "1.25rem"}}>Cuestionario sobre aprendizaje</h4>
 	    <p style={{color: "#71717a"}}>Comenzamos con una seccion donde identificamos tus habitos, retos y metas academicas</p>
 	  </div>
-	  <span style={{border: "2px solid #000000", borderRadius: "48%", padding: "2%"}}>L</span>
+	  <span className="material-symbols-outlined">
+	  check
+	  </span>
 	</div>
 
 
@@ -184,7 +187,9 @@ const ListSection = () => {
             <h4 style={{fontSize: "1.25rem"}}>Plan personalizado</h4>
 	    <p style={{color: "#71717a"}}>Elaboro contigo una guia practica de esutdio con tecnicas, horarios recursos ajustados para ti</p>
 	  </div>
-	  <span style={{border: "2px solid #000000", borderRadius: "48%", padding: "2%"}}>L</span>
+	  <span className="material-symbols-outlined">
+	  check
+	  </span>
 	</div>
 
         <div style={{display: "flex", flexDirection: "row", alignItems: "center", padding: "2%", border: "2px solid #dcdbeb", borderRadius: "10px", margin: "3%"}}>
@@ -193,7 +198,9 @@ const ListSection = () => {
             <h4 style={{fontSize: "1.25rem"}}>Seguimiento y mejora</h4>
 	    <p style={{color: "#71717a"}}>Acompanamiento para revisar tus avances y ajustar estrategias si es necesario.</p>
 	  </div>
-	  <span style={{border: "2px solid #000000", borderRadius: "48%", padding: "2%"}}>L</span>
+	  <span className="material-symbols-outlined">
+	  check
+	  </span>
 	</div>
 
       </div>
@@ -216,12 +223,13 @@ const inviteStyle = {
 }
 
 const InviteSection = () => {
+  let navigate = useNavigate();
   return (
     <div style={{display: "flex", justifyContent: "center"}}>
     <section style={inviteStyle}>
       <h3 style={{fontSize: "60px"}}>Quieres descubrir cual es tu <span style={{color: "#f0754c"}}>estilo de aprendizaje</span> ? </h3>
       <p style={{color: "#71717a"}}>Responde estre breve cuestionario y obten un resultado inmediato que te mostrara el metodo de estudio mas compatible contigo. Con base en tus respuestas sabras si aprendes de mejor de forma visual junto con recomendaciones practicas para aplicarlo desde hoy</p>
-      <button style={{color: "#ffffff", backgroundColor: "#f0754c", borderRadius: "10px", padding: "3%", border: "solid", fontSize: "20px", marginTop: "2%"}}>Haz el test y descubre tu metodo</button>
+      <button style={{color: "#ffffff", backgroundColor: "#f0754c", borderRadius: "10px", padding: "3%", border: "solid", fontSize: "20px", marginTop: "2%"}} onClick={() => navigate("/page")}>Haz el test y descubre tu metodo</button>
     </section>
     </div>
   );
