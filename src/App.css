@@ -12,8 +12,8 @@
   display: flex;
   flex-direction: column;
   padding: 3%;
-  width: 700px;
-  border: #71717a 2px solid;
+  width: 25vw;
+  border: #eeeeee 2px solid;
   border-radius: 10px;
   margin: 2%;
 }
@@ -23,10 +23,10 @@
 }
 
 .method:hover{
-  border: 2px #4f4fd6 solid;
+  border: 1px #3c83f6 solid;
   background-color: #fafaff;
-  box-shadow: 2px 2px 2px  2px #71717a;
-  transition: ease-in-out 0.2s; 
+  box-shadow: 2px 2px 2px  2px #cccccc;
+  transition: ease-in-out 0.3s; 
 }
 .ideal{
   background-color: #40bf80;
@@ -47,4 +47,11 @@
 
 .compare{
   background-color: "#cccccc"
+}
+
+.three-container{
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  min-width: 15vw;
 }
