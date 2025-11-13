@@ -164,7 +164,7 @@ const ListSection = () => {
             <h4 style={{fontSize: "1.25rem"}}>Diagnostico inicial</h4>
 	    <p style={{color: "#71717a"}}>Mediante una breve evaluacion conoceremos tu forma natural de asimiliar la informacion</p>
 	  </div>
-	  <span className="material-symbols-outlined">
+	  <span className="material-icons">
 	  check
 	  </span>
 	</div>
@@ -175,7 +175,7 @@ const ListSection = () => {
             <h4 style={{fontSize: "1.25rem"}}>Cuestionario sobre aprendizaje</h4>
 	    <p style={{color: "#71717a"}}>Comenzamos con una seccion donde identificamos tus habitos, retos y metas academicas</p>
 	  </div>
-	  <span className="material-symbols-outlined">
+	  <span className="material-icons">
 	  check
 	  </span>
 	</div>
@@ -187,7 +187,7 @@ const ListSection = () => {
             <h4 style={{fontSize: "1.25rem"}}>Plan personalizado</h4>
 	    <p style={{color: "#71717a"}}>Elaboro contigo una guia practica de esutdio con tecnicas, horarios recursos ajustados para ti</p>
 	  </div>
-	  <span className="material-symbols-outlined">
+	  <span className="material-icons">
 	  check
 	  </span>
 	</div>
@@ -198,7 +198,7 @@ const ListSection = () => {
             <h4 style={{fontSize: "1.25rem"}}>Seguimiento y mejora</h4>
 	    <p style={{color: "#71717a"}}>Acompanamiento para revisar tus avances y ajustar estrategias si es necesario.</p>
 	  </div>
-	  <span className="material-symbols-outlined">
+	  <span className="material-icons">
 	  check
 	  </span>
 	</div>
