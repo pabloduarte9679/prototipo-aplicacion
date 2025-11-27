@@ -1,5 +1,6 @@
 import React from "react";
 import {useState} from 'react';
+import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 
 
 const MainHeaderStyle = {
@@ -51,6 +52,7 @@ const Compare = (props) => {
 }
 
 const MainHeader = (props) => {
+  let navigate = useNavigate();
     return(
         <header style={MainHeaderStyle}>
             <h1 style={{fontSize:"4.75rem"}}>
@@ -59,7 +61,7 @@ const MainHeader = (props) => {
             <p className="p1">Explora 15 metodos de estudio cientificamente probados y encuentra la combinacion perfecta para tu estilo de aprendizaje</p>
 
 	    <div style={{display: "flex", justifyContent: "space-between"}}>
-            <button style={{color:"#ffffff", backgroundColor:"#3b71dc", padding:"2% 4%", fontWeight:"bold", borderRadius:"10px", border:"solid"}}>Descubrir mi metodo ideal </button>
+            <button style={{color:"#ffffff", backgroundColor:"#3b71dc", padding:"2% 4%", fontWeight:"bold", borderRadius:"10px", border:"solid"}} onClick={() => navigate("/form")}>Descubrir mi metodo ideal </button>
             <button style={{backgroundColor:"#ffffff", padding:"2% 4%", border:"solid 1px #ccc", borderRadius:"10px"}} onClick={() => props.setCompareCond(true)}>Comparar tecnicas de estudio</button>
 	    </div>
 	    <div style={{display: "flex", width: "60%", height: "25vh", alignItems: "center", justifyContent: "space-between", margin: "5%", textAlign: "center"}}>
@@ -179,7 +181,8 @@ function Page(){
     info: "Es posible asociar imagenes o palabras clave con el concepto que se estudia",
     benefits: "Sirve como tecnica complementaria para memorizar detalles especificos",
     ideal: "Mentes creativas que asocian conceptos con imagenes, palabras clave, etc..."
-  }
+  },
+  {}
 ]
 
 
