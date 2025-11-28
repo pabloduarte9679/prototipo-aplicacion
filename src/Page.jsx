@@ -7,9 +7,9 @@ const MainHeaderStyle = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    padding: "5%", 
     backgroundColor: "#f2f6f3",
-
+    height: "auto",
+    padding: "1rem",
 }
 
 const spanStyle = {
@@ -55,19 +55,17 @@ const MainHeader = (props) => {
   let navigate = useNavigate();
     return(
         <header style={MainHeaderStyle}>
-            <h1 style={{fontSize:"4.75rem"}}>
-                Descubre tu forma ideal de <span style={spanStyle}>aprender</span>
+            <h1 style={{fontSize:"4.75rem", marginTop: "3rem"}}>
+                Descubre tu forma ideal de  <span style={spanStyle}> aprender</span>
             </h1>
             <p className="p1">Explora 15 metodos de estudio cientificamente probados y encuentra la combinacion perfecta para tu estilo de aprendizaje</p>
 
-	    <div style={{display: "flex", justifyContent: "space-between"}}>
-            <button style={{color:"#ffffff", backgroundColor:"#3b71dc", padding:"2% 4%", fontWeight:"bold", borderRadius:"10px", border:"solid"}} onClick={() => navigate("/form")}>Descubrir mi metodo ideal </button>
-            <button style={{backgroundColor:"#ffffff", padding:"2% 4%", border:"solid 1px #ccc", borderRadius:"10px"}} onClick={() => props.setCompareCond(true)}>Comparar tecnicas de estudio</button>
+	    <div style={{display: "flex", justifyContent: "space-between", margin: "1rem"}}>
+            <button style={{color:"#ffffff", backgroundColor:"#3b71dc", padding:"2% 4%", fontWeight:"bold", borderRadius:"10px", border:"solid", margin: "1rem"}} onClick={() => navigate("/form")}>Descubrir mi metodo ideal </button>
+            <button style={{backgroundColor:"#ffffff", padding:"2% 4%", border:"solid 1px #ccc", borderRadius:"10px", margin: "1rem"}} onClick={() => props.setCompareCond(true)}>Comparar tecnicas de estudio</button>
 	    </div>
-	    <div style={{display: "flex", width: "60%", height: "25vh", alignItems: "center", justifyContent: "space-between", margin: "5%", textAlign: "center"}}>
+	    <div style={{display: "flex", width: "60%", height: "25vh", alignItems: "center", justifyContent: "space-between", margin: "2%", textAlign: "center"}}>
 		<div class="three-container">
-		<span className="material-icons">
-		</span>
                 <h3>15 Metodos</h3>
 		<p>tecnicas probadas</p>
 		</div>
@@ -93,11 +91,12 @@ const mainStyle = {
 }
 
 const MainContent = (props) => {
+  let navigate = useNavigate();
     return(
         <main style={mainStyle}>
             <h2 style={{fontSize:"2.5rem"}}>Explora las tecnicas de estudio</h2>
             <p className="p1">Cada tecnica tiene un proposito distinto. Conoce los metodos de estudio mas efectivos y elige los que se adaptan mejor a tu forma de aprender</p>
-            <div style={{display:"flex", flexDirection:"column", alignItems:"center", width: "75vw", flexWrap: "wrap", justifyContent: "center", gap: "20px"}}>
+            <div id="method-container">
               {
                 props.data.map((method) => 
                   <div className="method" key={method.name}>
@@ -109,6 +108,7 @@ const MainContent = (props) => {
 		    <p style={{color: "#65758b"}}>{method.info}</p>
 		    <p style={{fontSize: "0.875rem", color: "#65758b"}}><b style={{color: "#000"}}>Benficios: </b>{method.benefits}</p>
 		    <p style={{fontSize: "0.875rem", color: "#65758b"}}><b style={{color: "#000"}}>Ideal para: </b>{method.ideal}</p>
+			<button className="method-btn" onClick={() => navigate(method.path)}>Ver mas</button>
 		  </div>
 		) 
               }
@@ -128,7 +128,7 @@ function Page(){
     benefits: "Mantiene el enfoque, evita distracciones y aprovecha mejor la energia mental.",
     ideal: "cualquier estilo de aprendizaje que busque organizacion y equilibrio.",
     type: "mixto",
-    path: "Pomodoro.jsx"
+    path: "/pomodoro"
   },
   {
     icon: "🧠",
@@ -182,8 +182,80 @@ function Page(){
     benefits: "Sirve como tecnica complementaria para memorizar detalles especificos",
     ideal: "Mentes creativas que asocian conceptos con imagenes, palabras clave, etc..."
   },
-  {}
-]
+  {
+    icon: "🤝",
+    name: "Estudio en grupo",
+    info: "Aprender con otros permite intercambiar ideas y explicar temas desde distintas perspectivas",
+    benefits: "Fomenta la motivación, la comunicación y el entendimiento profundo.",
+    ideal: "Quienes aprenden conversando o participando activamente.",
+    type: "Auditivo-mixto",
+    path: ""
+  },
+  {
+    icon: "🎨",
+    name: "Toma de Notas Visual",
+    info: "Convierte apuntes en gráficos, íconos, flechas y colores.",
+    benefits: "Facilita la memorización y hace más entretenido el repaso.",
+    ideal: "Mentes creativas que asocian conceptos con imágenes.",
+    type: "visual",
+    path: ""
+  },
+  {
+    icon: "👩‍🏫",
+    name: "Enseñar a Otros",
+    info: "Reforzar lo aprendido al explicarlo a otra persona.",
+    benefits: "Permite detectar vacíos en tu comprensión y consolidar el conocimiento.",
+    ideal: "Quienes disfrutan compartir y aprender haciendo.",
+    type: "auditvo",
+    path: ""
+  },
+  {
+    icon: "📚",
+    name: "Método SQ3R",
+    info: "Técnica completa para comprender textos a profundidad: observar, preguntar, leer, recitar y repasar.",
+    benefits: "Favorece la comprensión, la memoria y la autoconfianza.",
+    ideal: "Materias teóricas o con mucha lectura.",
+    type: "Mixto",
+    path: ""
+  },
+  {
+    icon: "🃏",
+    name: "Flashcards",
+    info: "Tarjetas con preguntas y respuestas breves.",
+    benefits: "Refuerzan la memoria activa y permiten repasar en cualquier momento.",
+    ideal: "Aprender vocabulario, fórmulas o fechas.",
+    type: "Visual",
+    path: ""
+  },
+  {
+    icon: "✍️",
+    name: "Resúmenes y Esquemas",
+    info: "Simplifica los temas en frases cortas y organizadas.",
+    benefits: "Ayuda a identificar lo esencial y repasar con rapidez.",
+    ideal: "Estudiantes visuales que disfrutan sintetizar información.",
+    type: "Visual",
+    path: ""
+  },
+  {
+    icon: "📖",
+    name: "Lectura Activa",
+    info: "No es solo leer, sino subrayar, anotar y resumir mientras lees.",
+    benefits: "Aumenta la concentración y la comprensión del texto..",
+    ideal: "Quienes retienen mejor la información escrita.",
+    type: "Visual",
+    path: ""
+  },
+  {
+    icon: "🔄",
+    name: "Práctica Intercalada",
+    info: "Alterna diferentes temas o tipos de ejercicios en una misma sesión.",
+    benefits: "Evita la monotonía y fortalece la habilidad de aplicar lo aprendido en distintos contextos.",
+    ideal: "Materias prácticas o técnica",
+    type: "Mixto",
+    path: ""
+  },
+  
+] 
 
 
     return (
