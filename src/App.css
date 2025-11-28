@@ -8,6 +8,11 @@
   font-size: 1.25rem;
 }
 
+#method-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
 .method{
   display: flex;
   flex-direction: column;
@@ -15,11 +20,11 @@
   width: 25vw;
   border: #eeeeee 2px solid;
   border-radius: 10px;
-  margin: 2%;
+  margin: 2rem;
 }
 
-.method > div{
-  margin: 1%;
+.method > *{
+  margin: 0.7rem;
 }
 
 .method:hover{
@@ -28,6 +33,22 @@
   box-shadow: 2px 2px 2px  2px #cccccc;
   transition: ease-in-out 0.3s; 
 }
+
+.method-btn{
+  background-color: #40aaab;
+  color: #fff;
+  border: solid;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.method-btn:hover{
+  background-color: #4099c9;
+  border: 1px solid #000000;
+  transition: 0.3s;
+}
+
+
 .ideal{
   background-color: #40bf80;
   padding: 0.5rem 0.7rem;
