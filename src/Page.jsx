@@ -56,7 +56,7 @@ const MainHeader = (props) => {
     return(
         <header style={MainHeaderStyle}>
             <h1 style={{fontSize:"4.75rem", marginTop: "3rem"}}>
-                Descubre tu forma ideal de  <span style={spanStyle}> aprender</span>
+                Descubre tu forma ideal de&nbsp; <span style={spanStyle}>aprender</span>
             </h1>
             <p className="p1">Explora 15 metodos de estudio cientificamente probados y encuentra la combinacion perfecta para tu estilo de aprendizaje</p>
 
@@ -137,7 +137,7 @@ function Page(){
     benefits: "Facilita la creatividad, la memoria y la comprension global del tema",
     ideal: "Quienes comprenden mejor al ver relaciones entre ideas",
     type: "visual",
-    path: "MentalMap.jsx"
+    path: "/mentalmap"
   },
   {
     icon: "🔎",
@@ -146,7 +146,7 @@ function Page(){
     benefits: "Revela que tanto entiendes realmente y fortalece tu memoria activa",
     ideal: "Quienes aprender al hablar o practicar",
     type: "auditivo-kinestisico",
-    path: "Feynman.jsx"
+    path: "/feynman"
   },
   {
     icon: "⌛",
@@ -155,7 +155,7 @@ function Page(){
     benefits: "Evita el olvido rapido y mejora la retencion de conceptos clave",
     ideal: "Estudiantes organizados que buscan constancia sin saturarse",
     type: "mixto",
-    path: "SpacedStudy.jsx"
+    path: "/spacedstudy"
   },
   {
     icon: "🧩",
@@ -164,7 +164,7 @@ function Page(){
     benefits: "El error se convierte en una oportunidad de aprendizaje y refuerza la memoria",
     ideal: "Quienes aprenden al recordar y repetir informacion",
     type: "auditivo - visual",
-    path: "Auto.jsx"
+    path: "/auto"
   },
   {
     icon: "📓",
@@ -173,14 +173,16 @@ function Page(){
     benefits: "Organiza la informacion y facilita el repaso posterior",
     ideal: "Quienes prefieren tener estructura y claridad al estudiar",
     type: "visual-auditivo",
-    path: "Cornell.jsx",
+    path: "/cornell",
   },
   {
     icon: "💭",
     name: "Mnemotecnica",
     info: "Es posible asociar imagenes o palabras clave con el concepto que se estudia",
     benefits: "Sirve como tecnica complementaria para memorizar detalles especificos",
-    ideal: "Mentes creativas que asocian conceptos con imagenes, palabras clave, etc..."
+    ideal: "Mentes creativas que asocian conceptos con imagenes, palabras clave, etc...",
+    type: "Mixto",
+    path: "/mnemo"
   },
   {
     icon: "🤝",
@@ -189,7 +191,7 @@ function Page(){
     benefits: "Fomenta la motivación, la comunicación y el entendimiento profundo.",
     ideal: "Quienes aprenden conversando o participando activamente.",
     type: "Auditivo-mixto",
-    path: ""
+    path: "/group"
   },
   {
     icon: "🎨",
@@ -198,7 +200,7 @@ function Page(){
     benefits: "Facilita la memorización y hace más entretenido el repaso.",
     ideal: "Mentes creativas que asocian conceptos con imágenes.",
     type: "visual",
-    path: ""
+    path: "/visualnotes"
   },
   {
     icon: "👩‍🏫",
@@ -207,7 +209,7 @@ function Page(){
     benefits: "Permite detectar vacíos en tu comprensión y consolidar el conocimiento.",
     ideal: "Quienes disfrutan compartir y aprender haciendo.",
     type: "auditvo",
-    path: ""
+    path: "/teachothers"
   },
   {
     icon: "📚",
@@ -216,7 +218,7 @@ function Page(){
     benefits: "Favorece la comprensión, la memoria y la autoconfianza.",
     ideal: "Materias teóricas o con mucha lectura.",
     type: "Mixto",
-    path: ""
+    path: "/sq3r"
   },
   {
     icon: "🃏",
@@ -225,16 +227,16 @@ function Page(){
     benefits: "Refuerzan la memoria activa y permiten repasar en cualquier momento.",
     ideal: "Aprender vocabulario, fórmulas o fechas.",
     type: "Visual",
-    path: ""
+    path: "/flashcard"
   },
   {
     icon: "✍️",
-    name: "Resúmenes y Esquemas",
-    info: "Simplifica los temas en frases cortas y organizadas.",
+    name: "Resúmenes",
+    info: "Simplifica los temas en frases cortas y organizadas con un enfasis en las ideas principales del texto a resumir.",
     benefits: "Ayuda a identificar lo esencial y repasar con rapidez.",
     ideal: "Estudiantes visuales que disfrutan sintetizar información.",
     type: "Visual",
-    path: ""
+    path: "/summary"
   },
   {
     icon: "📖",
@@ -243,7 +245,7 @@ function Page(){
     benefits: "Aumenta la concentración y la comprensión del texto..",
     ideal: "Quienes retienen mejor la información escrita.",
     type: "Visual",
-    path: ""
+    path: "/active"
   },
   {
     icon: "🔄",
@@ -252,7 +254,7 @@ function Page(){
     benefits: "Evita la monotonía y fortalece la habilidad de aplicar lo aprendido en distintos contextos.",
     ideal: "Materias prácticas o técnica",
     type: "Mixto",
-    path: ""
+    path: "/distributed"
   },
   
 ] 
