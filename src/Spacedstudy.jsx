@@ -112,7 +112,7 @@ const SpacedStudy = () => {
         <li><b>Día 12:</b> Repaso final.</li>
       </ul>
 
-      <h2>Calendario Interactivo de Estudio Espaciado</h2>
+      <h2>calendario Estudio Espaciado</h2>
 
       <div style={{ maxWidth: "350px", marginTop: "1.5rem" }}>
         <div
@@ -220,7 +220,6 @@ const SpacedStudy = () => {
 
         {baseDate && (
           <div style={{ marginTop: "1.5rem" }}>
-            <h3>Tu plan generado:</h3>
             <ul>
               <li>
                 <b>Día 1:</b> {spacedDates.day1.toDateString()}
