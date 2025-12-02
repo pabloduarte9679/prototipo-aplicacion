@@ -62,8 +62,8 @@ const Pomodoro = () => {
       <div style={{textAlign: "center", width: "60vw"}}>
         <h2 style={{margin: "1rem", fontSize: "2rem", color: "#3b71dc"}}>¿Qué es la Técnica Pomodoro?</h2>
         <p style={{textAlign: "justify", textJustify: "inter-word", margin: "0.5rem", color: "#777777"}}>
-          El Método Pomodoro es una técnica de gestión del tiempo que divide el trabajo en intervalos, generalmente de 25 minutos, seguidos por un corto descanso.
-          Este proceso se repite varias veces y después de un ciclo completo, se toma un descanso más largo.
+          El metodo Pomodoro es una tecnica de gestion del tiempo que divide el trabajo en intervalos, generalmente de 25 minutos, seguidos por un corto descanso.
+          Este proceso se repite varias veces y despues de un ciclo completo, se toma un descanso más largo.
         </p>
       </div>
 
