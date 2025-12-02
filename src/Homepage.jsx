@@ -99,7 +99,7 @@ const MainContent = () => {
        <div style={mainBoxStyle}><h3>Resultados Reales</h3>
        <p style={mainParagraph}>Estrategias comprobadas que mejoran tu rendimiento y confianza académica.</p>
        </div>
-       <div style={mainBoxStyle}><h3>Acompanamiento</h3>
+       <div style={mainBoxStyle}><h3>Acompañamiento</h3>
        <p style={mainParagraph}>Seguimiento continuo para asegurar que mantengas el rumbo hacia tus metas.</p>
        </div>
      </div>
@@ -130,7 +130,7 @@ const AsideContent = () => {
       <div style={afterStyle}></div>
       </div>
       <div style={{maxWidth: "768px", border: "solid 2px #e4e4e7", borderRadius: "10px", padding: "3rem", margin: "5%"}}>
-        <p style={{fontSize: "1.125rem"}}>Nuestro proyecto busca ayudar a los estudiantes a descubrir su maximo potencial. Queremeos acompanar a jovenes en el desarrollo de tecnicas personalizadas de estudio, impulsando su confianza, organizacion
+        <p style={{fontSize: "1.125rem"}}>Nuestro proyecto busca ayudar a los estudiantes a descubrir su maximo potencial. Queremeos acompañar a jovenes en el desarrollo de tecnicas personalizadas de estudio, impulsando su confianza, organizacion
 	y resultados escolares</p>
         <p style={{fontSize: "1.125rem"}}>Nuestro enfoque enfoque combina autoconocimiento estrategias pedagogicas y herramientas praticas todo adaptado a tus metas y ritmo de aprendizaje</p>
 
