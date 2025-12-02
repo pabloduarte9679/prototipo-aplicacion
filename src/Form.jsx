@@ -11,7 +11,8 @@ const ResultPage = ({ total }) => {
       "Metodo Cornell",
       "Flashcards",
       "Resumenes",
-      "Lectura activa"
+      "Lectura activa",
+      "Metodo sq3r"
     ];
   } else if (total <= 20) {
     style = "Auditivo";
@@ -25,11 +26,11 @@ const ResultPage = ({ total }) => {
   } else {
     style = "Kinestésico";
     recommendations = [
-      "Aprendizaje mediante práctica",
-      "Modelos físicos o simuladores",
-      "Ejercicios interactivos",
-      "Estudiar caminando o moviéndose",
-      "Roleplay o dramatización"
+      "Tecnica pomodoro",
+      "Mnemotecnica",
+      "Practica intercalada",
+      "",
+      ""
     ];
   }
 
