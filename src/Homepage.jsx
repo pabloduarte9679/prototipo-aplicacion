@@ -89,12 +89,12 @@ const MainContent = () => {
   return (
    <main style={mainStyle}>
      <h2 style={{fontSize: "3rem"}}>Aprender nunca habia sido tan <span style={{color: "#f0754c"}}>tuyo</span> </h2>
-     <p style={{color: "#71717a", fontSize: "1.125rem"}}>Cada estudiante tiene una forma unica de comprender, retener y aplicar el conocimiento. Mi servicio de consultoria academica personalizada esta disenado para ayudarte a identificar tu estilo de aprendizaje, optimizar tus habitos de estudio y mejorar tu rendimiento academico.��</p>
+     <p style={{color: "#71717a", fontSize: "1.125rem"}}>Cada estudiante tiene una forma unica de comprender, retener y aplicar el conocimiento. Mi servicio de consultoria academica personalizada esta disenado para ayudarte a identificar tu estilo de aprendizaje, optimizar tus habitos de estudio y mejorar tu rendimiento academico.</p>
 
      <p style={{fontSize: "1.125rem"}}>Ya seas estudiante de secundaria, preparatoria o universidad, te acompano paso a paso para que estudiar deje de ser una carga y se convierta en un experencia efectiva, clara y motivadora.</p>
      <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between", width: "100%"}}>
        <div style={mainBoxStyle}><h3>Personalizado</h3>
-       <p style={mainParagraph}>Me�todos adaptados a tu estilou�nico de aprendizaje y objetivos espei�ficos.</p>
+       <p style={mainParagraph}>Metodos adaptados a tu estilo unico de aprendizaje y objetivos especificos.</p>
        </div>
        <div style={mainBoxStyle}><h3>Resultados Reales</h3>
        <p style={mainParagraph}>Estrategias comprobadas que mejoran tu rendimiento y confianza académica.</p>
