@@ -8,10 +8,10 @@ const ResultPage = ({ total }) => {
     style = "Visual";
     recommendations = [
       "Mapas mentales",
-      "Diagramas",
-      "Uso de colores y resaltadores",
-      "Infografías",
-      "Resumenes visuales"
+      "Metodo Cornell",
+      "Flashcards",
+      "Resumenes",
+      "Lectura activa"
     ];
   } else if (total <= 20) {
     style = "Auditivo";
