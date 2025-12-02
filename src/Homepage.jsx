@@ -70,7 +70,7 @@ const MainHeader = () => {
   let navigate = useNavigate();
   return (
     <header className="headerMain" style={headerStyle}>
-      <div style={{ flex:"3"}}>
+      <div style={{ flex:"3", display: "flex", flexDirection: "column"}}>
         <span style={{color: "#f0754c", backgroundColor: "#f7e9e8", padding: "10px", borderRadius: "20px" }}>Consultoria academica personalizada</span>
 	<h1 style={{color: "#000000", fontSize: "3.75rem", fontWeight: "700"}}>Descubre tu forma ideal de <span style={spanStyle}>estudiar</span></h1>
 	<p style={{color:"#999999", fontSize: "1.25rem", width:"80%"}}>Transforma tu manera de aprender con una consultoria personalizada que te ayudara a encontrar con el metodo de estudio que mejor se adapte a ti</p>
