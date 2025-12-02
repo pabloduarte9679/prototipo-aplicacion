@@ -158,15 +158,6 @@ function Page(){
     path: "/spacedstudy"
   },
   {
-    icon: "🧩",
-    name: "autoevaluacion",
-    info: "Implica ponerte a prueba constantemente, simulando examenes o preguntas tipo test",
-    benefits: "El error se convierte en una oportunidad de aprendizaje y refuerza la memoria",
-    ideal: "Quienes aprenden al recordar y repetir informacion",
-    type: "auditivo - visual",
-    path: "/auto"
-  },
-  {
     icon: "📓",
     name: "Metodo Cornell",
     info: "Divide tus apuntes en tres secciones: notas, ideas clave, y resumen final",
@@ -183,33 +174,6 @@ function Page(){
     ideal: "Mentes creativas que asocian conceptos con imagenes, palabras clave, etc...",
     type: "Mixto",
     path: "/mnemo"
-  },
-  {
-    icon: "🤝",
-    name: "Estudio en grupo",
-    info: "Aprender con otros permite intercambiar ideas y explicar temas desde distintas perspectivas",
-    benefits: "Fomenta la motivación, la comunicación y el entendimiento profundo.",
-    ideal: "Quienes aprenden conversando o participando activamente.",
-    type: "Auditivo-mixto",
-    path: "/group"
-  },
-  {
-    icon: "🎨",
-    name: "Toma de Notas Visual",
-    info: "Convierte apuntes en gráficos, íconos, flechas y colores.",
-    benefits: "Facilita la memorización y hace más entretenido el repaso.",
-    ideal: "Mentes creativas que asocian conceptos con imágenes.",
-    type: "visual",
-    path: "/visualnotes"
-  },
-  {
-    icon: "👩‍🏫",
-    name: "Enseñar a Otros",
-    info: "Reforzar lo aprendido al explicarlo a otra persona.",
-    benefits: "Permite detectar vacíos en tu comprensión y consolidar el conocimiento.",
-    ideal: "Quienes disfrutan compartir y aprender haciendo.",
-    type: "auditvo",
-    path: "/teachothers"
   },
   {
     icon: "📚",
